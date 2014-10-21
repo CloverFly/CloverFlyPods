@@ -10,44 +10,57 @@
 
 @interface LxFileManager : NSObject
 /**
- A file location for an application's main bundle.
+ *  应用程序主句柄
+ *
+ *  @return 句柄
  */
 + (NSString *)mainBundleDirectory;
 
 /**
- A file location for an application's caches directory.
+ *  缓存路径
+ *
+ *  @return 缓存路径
  */
 + (NSString *)cachesDirectory;
 
 /**
- A file location for an application's documents directory.
+ *  文档路径
+ *
+ *  @return 文档路径
  */
 + (NSString *)documentsDirectory;
 
 /**
- A file location for an application's temporary directory.
+ *  临时路径
+ *
+ *  @return 临时路径
  */
 + (NSString *)temporaryDirectory;
 
 /**
- A file location for serializing an application's user object to disk.
+ *  用户文件
+ *
+ *  @return 用户文件
  */
 + (NSString *)userFile;
 
+
 /**
- A file location for an application's main bundle
- 
- @param fileData The data to write to a file.
- @param path The path to write the data to.
- @return BOOL Whether or not th file was created.
+ *  创建文件
+ *
+ *  @param fileData 文件数据
+ *  @param path     文件路径
+ *
+ *  @return 成功与否
  */
 + (BOOL)createFile:(NSData *)fileData atPath:(NSString *)path;
 
 /**
- A file location for an application's main bundle
- 
- @param path The path to remove the file from.
- @return BOOL Whether or not the file was deleted.
+ *  移除文件
+ *
+ *  @param path 文件路径
+ *
+ *  @return 成功与否
  */
 + (BOOL)removeFileAtPath:(NSString *)path;
 
