@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CloverFlyPods"
-  s.version      = "1.0"
+  s.version      = "1.0.1"
   s.summary      = "This is a ClvoerFlyPods"
   s.description  = <<-DESC
                    This is a ClvoerFlyPods and This is a ClvoerFlyPods
