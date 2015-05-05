@@ -19,6 +19,6 @@ Pod::Spec.new do |s|
   
   s.requires_arc = true
   
-  s.source_files  = 'LxFileManager/*' 
+  s.source_files  = 'CloverFly/*' 
 	s.frameworks = 'Foundation', 'CoreGraphics', 'UIKit' 
 end
